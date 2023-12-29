@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#textshow").hide();
+            $("#click").click(function () {
+                alert("You clicked The click button")
+            })
+            $("#hide").click(function () {
+                $("#texthide").hide();
+            })
+            $("#show").click(function () {
+                $("#textshow").show();
+            })
+        });
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #sidebar {
+            border-right: 5px solid black;
+            width: 10%;
+            height: auto;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        #documentation {
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border: 0.2rem solid black;
+        }
+
+        #documentation div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h5 {
+            text-decoration: underline;
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h5>.click()</h5>
+        <h5>.hide()</h5>
+        <h5>.show()</h5>
+        <h5>.toggle()</h5>
+        <h5>.slideDown()</h5>
+        <h5>.slideUp()</h5>
+        <h5>.slideToggle()</h5>
+        <h5>.fadeIn()</h5>
+        <h5>.fadeOut()</h5>
+        <h5>.addClass()</h5>
+        <h5>.addClass()</h5>
+        <h5>.after()</h5>
+        <h5>.append()</h5>
+        <h5>.html()</h5>
+        <h5>.attr()</h5>
+        <h5>.val()</h5>
+        <h5>.text()</h5>
+    </div>
+    <div id="documentation">
+        <h1>My Mini Documentation</h1>
+        <h2>Click</h2>
+        <div>
+            <button id="click">.click()</button>
+            <p>Binds an event handler to the "click JavaScript event, or trigger that
+                event on an element. Example: Clicking
+                the
+                button will display alert box.</p>
+        </div>
+        <hr>
+        <h2>Hide</h2>
+        <div>
+            <button id="hide">.hide()</button>
+            <p id="texthide">Hides the matched elements. Example: Hiding this
+                paragraph.
+            </p>
+        </div>
+        <hr>
+        <h2>Show</h2>
+        <div>
+            <button id="show">.show()</button>
+            <p id="textshow">Displays the matched elements. Example: Showing hidden
+                paragraph here.</p>
+        </div>
+        <hr>
+
+    </div>
+</body>
+
+</html>
